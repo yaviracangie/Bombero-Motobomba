@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Juego Bombero</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="contenedor">
+
+  <div id="forma">
+    <h1>BOMBERO</h1>
+    <p>Ingrese su Nombre:</p><br>
+    <input type="text" id="nombre" placeholder="Nombre" ><br><br>
+    <p>Ingrese su fecha de nacimiento</p><br>
+    <input type="date" id="fecha" placeholder="Fechad de Nacimiento" value="2018-07-22"  min="1950-01-01" max="2020-01-01"><br><br>
+    <input type="button" value="Agregar" id="agregar1">
+  </div>
+
+  
+
+  <div id="forma2">
+    <h1>MOTOBOMBA</h1>
+    <input type="text" placeholder="Ingrese Codigo" id="bom"><br><br>
+    <input type="button" value="Agregar" id="agregar2">
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="contenedor2">
+  <div id="ocultar1">
+    <table class="table" id="table1" border="1" onchange="colorear(this)"> 
+      <thead class="thead-dark">
+        <tr>        
+          <th scope="col">Nombre</th>        
+        </tr>
+      </thead>
+      <tbody id="myTable">
+      <tr>
+        <td scope="row" id="nombre" value="red"></td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+
+  <div id="ocultar2">
+    <table class="table" id="table2" border="1"> 
+      <thead class="thead-dark">
+        <tr>        
+          <th scope="col">Serie</th>        
+        </tr>
+      </thead>
+      <tbody id="myTable">
+      <tr>
+        <td scope="row" id="nombre"></td>
+      </tr>
+      </tbody>
+      </table>
+  </div>
+  </div>
+  <br><br><br>
+
+  <input type="button" value="Asociar" id="asociar">
+  
+  </body>
+
+<script src="motobomba.js"></script>
+<script src="bombero.js"></script>
+<script src="main.js"></script>
+</html>
