@@ -1,0 +1,40 @@
+div#contenedor {
+  height:28px;
+  width:500px;
+   
+   
+}
+ div#forma {
+   float:left;
+   height:28px;
+   width:100%;
+   margin-right:-5px;
+   
+ }
+ 
+ div#forma2 {
+   float: right;;
+   width:5px;
+   height:28px;
+   
+ }
+ div#contenedor2 {
+  height:28px;
+  width:500px;
+   
+   
+}
+ div#ocultar1 {
+   float:left;
+   height:28px;
+   width:100%;
+   margin-right:-5px;
+   display: none
+ }
+ 
+ div#ocultar2 {
+   float: right;;
+   width:5px;
+   height:28px;
+   display: none
+ }
