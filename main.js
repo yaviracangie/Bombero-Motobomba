@@ -3,7 +3,8 @@ var listado2 = [];
 var indices = [];
 var indices2 = []
 var seleccionar = false;
-//RECUPERACION DE DATOS
+
+
 document.getElementById('agregar1')
   .addEventListener('click', function () {
 
@@ -14,7 +15,7 @@ document.getElementById('agregar1')
     listado.push(newBom);
     console.log(listado);
 
-    //AÑADIR TABLA
+    
 
     document.getElementById("ocultar1").style.display = "block";
 
@@ -47,8 +48,7 @@ document.getElementById('agregar1')
 
   });
 
-//REUPERRAR DATOS DE LA MOTOBOMBA
-
+//Motobomba recuperacion de datos
 document.getElementById('agregar2')
   .addEventListener('click', function () {
 
@@ -58,7 +58,7 @@ document.getElementById('agregar2')
     listado2.push(newSerie);
     console.log(listado2);
 
-    //AGREGAR EN LA TABLA
+    //La agregacion de las tablas
 
     document.getElementById("ocultar2").style.display = "block";
 
@@ -97,14 +97,14 @@ document.getElementById('agregar2')
 
   });
 
-  //ASOCIAR CON BOMBERO
+  //asociacion con bombero
 document.getElementById('asociar')
   .addEventListener('click', function () {
 
     for (var j = 0; j < listado2; j++) {
       for (var i = 0; i < indices; i++) {
         listado2[indices[j]].addBombero.bombero(listado[indices2[i]]);
-        console.log('bjhhk')
+        console.log('Hola')
 
       }
 
